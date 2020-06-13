@@ -1,0 +1,12 @@
+{
+  "overrides": [
+    {
+      "files": [".prettierrc", ".eslintrc", "package.json", "tsconfig.json"],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ],
+  "singleQuote": false,
+  "printWidth": 120
+}
