@@ -6,7 +6,7 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint", "jest", "react", "prettier"],
+  "plugins": ["@typescript-eslint", "jest", "react", "prettier", "react-hooks"],
   "rules": {
     // ESLint rules
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -80,12 +80,15 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
     "react/destructuring-assignment": "off",
-    "react/jsx-key": "error"
+    "react/jsx-key": "error",
+
+    // React Hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
