@@ -6,9 +6,9 @@ type DefaultProps = {
   fill?: string;
 };
 
-type PolygonProps = DefaultProps & ColorProps;
+export type PolygonProps = DefaultProps & ColorProps;
 
-const Polygon = styled("polygon", { shouldForwardProp })<PolygonProps>(color, {
+const Polygon = styled("polygon", { shouldForwardProp })<PolygonProps | DefaultProps>(color, {
   boxSizing: "border-box",
 });
 

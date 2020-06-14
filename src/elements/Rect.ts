@@ -6,9 +6,9 @@ type DefaultProps = {
   fill?: string;
 };
 
-type RectProps = DefaultProps & ColorProps;
+export type RectProps = DefaultProps & ColorProps;
 
-const Rect = styled("rect", { shouldForwardProp })<RectProps>(color, {
+const Rect = styled("rect", { shouldForwardProp })<RectProps | DefaultProps>(color, {
   boxSizing: "border-box",
 });
 

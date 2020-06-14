@@ -14,7 +14,12 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type SubProps = SpaceProps & FontSizeProps & FontWeightProps & LineHeightProps & BackgroundColorProps & OpacityProps;
+export type SubProps = SpaceProps &
+  FontSizeProps &
+  FontWeightProps &
+  LineHeightProps &
+  BackgroundColorProps &
+  OpacityProps;
 
 const Sub = styled("sub", { shouldForwardProp })<SubProps>(space, fontSize, fontWeight, lineHeight, color, {});
 

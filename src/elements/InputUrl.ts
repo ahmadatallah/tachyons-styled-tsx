@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "url";
 };
 
-type InputUrlProps = DefaultProps &
+export type InputUrlProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

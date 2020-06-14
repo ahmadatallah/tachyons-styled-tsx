@@ -17,9 +17,9 @@ type DefaultProps = {
   fill?: string;
 };
 
-type SvgProps = DefaultProps & ColorProps & DisplayProps & WidthProps & MaxWidthProps & HeightProps;
+export type SvgProps = DefaultProps & ColorProps & DisplayProps & WidthProps & MaxWidthProps & HeightProps;
 
-const Svg = styled("svg", { shouldForwardProp })<SvgProps>(color, display, width, maxWidth, height, {
+const Svg = styled("svg", { shouldForwardProp })<SvgProps | DefaultProps>(color, display, width, maxWidth, height, {
   boxSizing: "border-box",
 });
 

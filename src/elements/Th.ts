@@ -20,7 +20,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type ThProps = SpaceProps &
+export type ThProps = SpaceProps &
   WidthProps &
   FontSizeProps &
   FontWeightProps &

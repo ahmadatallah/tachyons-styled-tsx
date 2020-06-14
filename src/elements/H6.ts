@@ -32,7 +32,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type H6Props = SpaceProps &
+export type H6Props = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

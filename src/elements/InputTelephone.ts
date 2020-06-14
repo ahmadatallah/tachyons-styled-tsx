@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "tel";
 };
 
-type InputTelephoneProps = DefaultProps &
+export type InputTelephoneProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

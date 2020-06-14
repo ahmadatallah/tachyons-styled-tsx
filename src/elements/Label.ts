@@ -24,7 +24,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type LabelProps = SpaceProps &
+export type LabelProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

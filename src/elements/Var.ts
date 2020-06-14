@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type VarProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
+export type VarProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
 const Var = styled("var", { shouldForwardProp })<VarProps>(space, width, fontSize, color, {
   fontFamily: "monaco, monospace",
 });

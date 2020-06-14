@@ -17,7 +17,7 @@ import {
   textStyle,
 } from "styled-system";
 
-type AbbrProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & TextAlignProps & DisplayProps;
+export type AbbrProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & TextAlignProps & DisplayProps;
 
 const Abbr = styled("abbr", { shouldForwardProp })<AbbrProps>(
   space,

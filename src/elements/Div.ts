@@ -71,7 +71,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type DivProps = SpaceProps &
+export type DivProps = SpaceProps &
   HeightProps &
   WidthProps &
   MaxWidthProps &

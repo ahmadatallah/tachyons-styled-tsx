@@ -18,7 +18,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type SmallProps = SpaceProps &
+export type SmallProps = SpaceProps &
   WidthProps &
   FontSizeProps &
   FontWeightProps &

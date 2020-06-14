@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "search";
 };
 
-type InputSearchProps = DefaultProps &
+export type InputSearchProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

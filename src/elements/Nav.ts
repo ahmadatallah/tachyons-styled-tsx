@@ -44,7 +44,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type NavProps = SpaceProps &
+export type NavProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   FontSizeProps &

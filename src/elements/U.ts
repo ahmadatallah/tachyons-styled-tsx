@@ -14,7 +14,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type UProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
+export type UProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
 
 const U = styled("u", { shouldForwardProp })<UProps>(space, width, fontSize, fontWeight, color, {});
 

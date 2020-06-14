@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "file";
 };
 
-type InputFileProps = DefaultProps &
+export type InputFileProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

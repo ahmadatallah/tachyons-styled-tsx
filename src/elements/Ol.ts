@@ -46,7 +46,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type OlProps = SpaceProps &
+export type OlProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

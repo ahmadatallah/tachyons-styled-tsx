@@ -6,8 +6,8 @@ type DefaultProps = {
   fill?: string;
 };
 
-type PolylineProps = DefaultProps & ColorProps;
-const Polyline = styled("polyline", { shouldForwardProp })<PolylineProps>(color, {
+export type PolylineProps = DefaultProps & ColorProps;
+const Polyline = styled("polyline", { shouldForwardProp })<PolylineProps | DefaultProps>(color, {
   boxSizing: "border-box",
 });
 

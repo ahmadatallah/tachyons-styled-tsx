@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type DataProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
+export type DataProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
 const Data = styled("data", { shouldForwardProp })<DataProps>(space, width, fontSize, color, {});
 
 export default Data;

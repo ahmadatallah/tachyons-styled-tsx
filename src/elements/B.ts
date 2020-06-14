@@ -14,7 +14,7 @@ import {
   color,
 } from "styled-system";
 
-type BProps = SpaceProps & WidthProps & DisplayProps & FontSizeProps & FontWeightProps;
+export type BProps = SpaceProps & WidthProps & DisplayProps & FontSizeProps & FontWeightProps;
 
 const B = styled("b", { shouldForwardProp })<BProps>(space, width, display, fontSize, fontWeight, color, {});
 

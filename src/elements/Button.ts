@@ -30,7 +30,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type ButtonProps = SpaceProps &
+export type ButtonProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

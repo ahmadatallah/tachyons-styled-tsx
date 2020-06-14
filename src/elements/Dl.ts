@@ -24,7 +24,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type DlProps = SpaceProps &
+export declare type DlProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

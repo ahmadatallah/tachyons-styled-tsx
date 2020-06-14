@@ -49,7 +49,7 @@ type DefaultProps = {
     | "week";
 };
 
-type InputProps = DefaultProps &
+export type InputProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

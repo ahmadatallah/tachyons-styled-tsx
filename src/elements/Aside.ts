@@ -25,7 +25,7 @@ import {
   BackgroundColorProps,
 } from "styled-system";
 
-type AsideProps = SpaceProps &
+export type AsideProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

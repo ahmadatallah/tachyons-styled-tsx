@@ -30,7 +30,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type PProps = SpaceProps &
+export type PProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

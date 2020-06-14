@@ -16,7 +16,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type HrProps = SpaceProps &
+export type HrProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   BackgroundColorProps &

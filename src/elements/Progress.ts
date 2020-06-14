@@ -26,7 +26,7 @@ type DefaultProps = {
   valueColor?: string;
 };
 
-type ProgressProps = DefaultProps &
+export type ProgressProps = DefaultProps &
   SpaceProps &
   WidthProps &
   HeightProps &

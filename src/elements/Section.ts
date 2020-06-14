@@ -55,7 +55,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type SectionProps = SpaceProps &
+export type SectionProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   BottomProps &

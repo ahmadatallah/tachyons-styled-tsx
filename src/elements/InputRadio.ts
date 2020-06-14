@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "radio";
 };
 
-type InputRadioProps = DefaultProps &
+export type InputRadioProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

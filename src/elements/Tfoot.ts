@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type TfootProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
+export type TfootProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
 const Tfoot = styled("tfoot", { shouldForwardProp })<TfootProps>(space, width, fontSize, color, {});
 
 Tfoot.defaultProps = {

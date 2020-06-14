@@ -6,9 +6,9 @@ type DefaultProps = {
   fill?: string;
 };
 
-type PathProps = DefaultProps & ColorProps;
+export type PathProps = DefaultProps & ColorProps;
 
-const Path = styled("path", { shouldForwardProp })<PathProps>(color, {
+const Path = styled("path", { shouldForwardProp })<PathProps | DefaultProps>(color, {
   boxSizing: "border-box",
 });
 

@@ -20,7 +20,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type TextareaProps = SpaceProps &
+export type TextareaProps = SpaceProps &
   WidthProps &
   DisplayProps &
   MaxWidthProps &

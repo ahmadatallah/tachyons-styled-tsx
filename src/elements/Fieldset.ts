@@ -22,7 +22,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type FieldsetProps = SpaceProps &
+export type FieldsetProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

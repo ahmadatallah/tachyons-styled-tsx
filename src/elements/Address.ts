@@ -24,7 +24,7 @@ import {
   TextStyleProps,
 } from "styled-system";
 
-type AddressProps = SpaceProps &
+export type AddressProps = SpaceProps &
   DisplayProps &
   WidthProps &
   FontSizeProps &

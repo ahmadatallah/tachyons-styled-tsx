@@ -24,7 +24,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type CiteProps = SpaceProps &
+export type CiteProps = SpaceProps &
   WidthProps &
   DisplayProps &
   FontSizeProps &

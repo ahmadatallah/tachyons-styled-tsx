@@ -16,7 +16,7 @@ import {
   LayoutProps,
 } from "styled-system";
 
-type TableProps = SpaceProps &
+export type TableProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   FontSizeProps &

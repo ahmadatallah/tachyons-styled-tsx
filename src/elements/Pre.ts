@@ -18,7 +18,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type PreProps = SpaceProps &
+export type PreProps = SpaceProps &
   WidthProps &
   FontSizeProps &
   BackgroundColorProps &

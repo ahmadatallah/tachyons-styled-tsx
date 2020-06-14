@@ -56,7 +56,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type FooterProps = SpaceProps &
+export type FooterProps = SpaceProps &
   HeightProps &
   WidthProps &
   MaxWidthProps &

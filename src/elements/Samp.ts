@@ -22,7 +22,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type SampProps = SpaceProps &
+export type SampProps = SpaceProps &
   WidthProps &
   FontSizeProps &
   FontWeightProps &

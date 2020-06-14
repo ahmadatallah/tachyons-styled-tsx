@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type StrongProps = SpaceProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
+export type StrongProps = SpaceProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
 
 const Strong = styled("strong", { shouldForwardProp })<StrongProps>(space, fontSize, fontWeight, color, {});
 

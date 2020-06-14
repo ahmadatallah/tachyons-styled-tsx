@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "checkbox";
 };
 
-type InputCheckboxProps = DefaultProps &
+export type InputCheckboxProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

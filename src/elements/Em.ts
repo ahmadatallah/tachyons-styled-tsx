@@ -16,7 +16,7 @@ import {
   TextStyleProps,
 } from "styled-system";
 
-type EmProps = SpaceProps &
+export type EmProps = SpaceProps &
   WidthProps &
   DisplayProps &
   FontSizeProps &

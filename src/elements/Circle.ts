@@ -6,9 +6,9 @@ type DefaultProps = {
   fill?: string;
 };
 
-type CircleProps = DefaultProps & ColorProps;
+export type CircleProps = DefaultProps & ColorProps;
 
-const Circle = styled("circle", { shouldForwardProp })<CircleProps>(color, {
+const Circle = styled("circle", { shouldForwardProp })<CircleProps | DefaultProps>(color, {
   boxSizing: "border-box",
 });
 

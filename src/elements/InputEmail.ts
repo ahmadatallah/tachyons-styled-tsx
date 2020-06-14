@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "email";
 };
 
-type InputEmailProps = DefaultProps &
+export type InputEmailProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

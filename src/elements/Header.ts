@@ -52,7 +52,7 @@ import {
   GridAreaProps,
 } from "styled-system";
 
-type FooterProps = SpaceProps &
+export type HeaderProps = SpaceProps &
   HeightProps &
   WidthProps &
   DisplayProps &
@@ -78,7 +78,7 @@ type FooterProps = SpaceProps &
   GridTemplateAreasProps &
   GridAreaProps;
 
-const Header = styled("header", { shouldForwardProp })(
+const Header = styled("header", { shouldForwardProp })<HeaderProps>(
   space,
   width,
   height,

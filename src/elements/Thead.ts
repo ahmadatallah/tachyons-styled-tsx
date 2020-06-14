@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type TheadProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
+export type TheadProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
 const Thead = styled("thead", { shouldForwardProp })<TheadProps>(space, width, fontSize, color, {});
 
 Thead.defaultProps = {

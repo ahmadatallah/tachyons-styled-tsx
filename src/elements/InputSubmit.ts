@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "submit";
 };
 
-type InputSubmitProps = DefaultProps &
+export type InputSubmitProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

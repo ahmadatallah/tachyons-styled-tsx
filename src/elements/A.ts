@@ -32,7 +32,7 @@ import {
   TextStyleProps,
 } from "styled-system";
 
-type AProps = SpaceProps &
+export type AProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

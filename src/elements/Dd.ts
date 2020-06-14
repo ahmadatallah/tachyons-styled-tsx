@@ -28,7 +28,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type DdProps = SpaceProps &
+export type DdProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

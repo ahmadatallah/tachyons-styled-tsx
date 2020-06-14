@@ -22,7 +22,7 @@ import {
   BorderColorProps,
 } from "styled-system";
 
-type TimeProps = SpaceProps &
+export type TimeProps = SpaceProps &
   WidthProps &
   DisplayProps &
   FontSizeProps &

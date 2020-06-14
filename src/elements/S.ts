@@ -14,7 +14,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type SProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps & TextStyleProps;
+export type SProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps & TextStyleProps;
 
 const S = styled("s", { shouldForwardProp })<SProps>(space, width, fontSize, color, textStyle, {});
 

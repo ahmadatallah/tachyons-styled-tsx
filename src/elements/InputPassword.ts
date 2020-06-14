@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "password";
 };
 
-type InputPasswordProps = DefaultProps &
+export type InputPasswordProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

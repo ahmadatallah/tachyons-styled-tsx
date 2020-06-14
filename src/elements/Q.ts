@@ -15,7 +15,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type QProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
+export type QProps = SpaceProps & WidthProps & FontSizeProps & FontWeightProps & BackgroundColorProps & OpacityProps;
 
 const Q = styled("q", { shouldForwardProp })<QProps>(space, width, fontSize, fontWeight, lineHeight, color, {});
 

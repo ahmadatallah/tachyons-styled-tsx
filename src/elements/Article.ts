@@ -58,7 +58,7 @@ import {
   OverflowProps,
 } from "styled-system";
 
-type ArticleProps = SpaceProps &
+export type ArticleProps = SpaceProps &
   WidthProps &
   MaxWidthProps &
   DisplayProps &

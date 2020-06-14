@@ -77,7 +77,7 @@ import U from "./U";
 import Ul from "./Ul";
 import Var from "./Var";
 
-export {
+const elements = {
   A,
   Abbr,
   Address,
@@ -157,3 +157,5 @@ export {
   Ul,
   Var,
 };
+
+export default elements;

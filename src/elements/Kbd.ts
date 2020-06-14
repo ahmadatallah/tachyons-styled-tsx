@@ -19,7 +19,7 @@ import {
   BorderRadiusProps,
 } from "styled-system";
 
-type KbdProps = SpaceProps &
+export type KbdProps = SpaceProps &
   FontSizeProps &
   TextStyleProps &
   BordersProps &

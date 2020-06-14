@@ -27,7 +27,7 @@ type DefaultProps = {
   type?: "text";
 };
 
-type InputTextProps = DefaultProps &
+export type InputTextProps = DefaultProps &
   SpaceProps &
   DisplayProps &
   FontSizeProps &

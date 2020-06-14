@@ -12,7 +12,7 @@ import {
   OpacityProps,
 } from "styled-system";
 
-type TbodyProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
+export type TbodyProps = SpaceProps & WidthProps & FontSizeProps & BackgroundColorProps & OpacityProps;
 const Tbody = styled("tbody", { shouldForwardProp })<TbodyProps>(space, width, fontSize, color, {});
 
 Tbody.defaultProps = {
