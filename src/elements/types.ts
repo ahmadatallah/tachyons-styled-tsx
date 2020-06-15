@@ -77,7 +77,9 @@ import { TrProps } from "./Tr";
 import { UProps } from "./U";
 import { UlProps } from "./Ul";
 import { VarProps } from "./Var";
-import { StylesProps } from "styled-system";
+
+// Shorthand Props
+import { StylesProps, SpaceProps, ColorProps, ResponsiveValue } from "styled-system";
 
 export declare type ElementProps =
   | AProps
@@ -160,9 +162,7 @@ export declare type ElementProps =
   | UlProps
   | VarProps;
 
-type ThemeAttributes = null | string | number | symbol | boolean | (string | number | symbol | null)[];
-
 export type IntrinsicTachyonsAttributes = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key in keyof StylesProps]?: Pick<StylesProps, key> | ElementProps | ThemeAttributes;
+  [key in keyof StylesProps]?: Pick<StylesProps, key> | SpaceProps | ColorProps | ResponsiveValue<any>;
 };
