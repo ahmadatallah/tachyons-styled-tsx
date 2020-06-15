@@ -1,23 +1,22 @@
 import React from "react";
 import { ThemeProvider } from "emotion-theming";
-import logo from "./logo.svg";
-import "./App.css";
-import Container from "components/Container";
-import { Progress, H1 } from "elements";
-import theme from "theme";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import theme from "./theme";
+
+// import pages here
+
+import Components from "./pages/Components";
+
+import Div from "./elements/Div";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <H1>Tachyons + Emotion + Styled System + TypeScript [ WIP ]</H1>
-            <Progress value={30} />
-          </header>
-        </div>
-      </Container>
+      <Div>
+        <Router>
+          <Route exact path="/" component={Components} />
+        </Router>
+      </Div>
     </ThemeProvider>
   );
 }
