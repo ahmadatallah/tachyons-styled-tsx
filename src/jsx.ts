@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import elements from "./elements";
+import elements from "elements";
 import { jsx as emotionJSX } from "@emotion/core";
+import "types/react-jsx";
 
 type Element = keyof typeof elements;
 const tags: unknown = {};
