@@ -1,13 +1,13 @@
 import { StylesProps, SpaceProps, ColorProps, ThemeValue, ResponsiveValue } from "styled-system";
 
-export type IntrnisicSpaceShorthandAttributes = {
+export type IntrinsicSpaceShorthandAttributes = {
   [key in keyof SpaceProps]?:
     | Pick<SpaceProps, key>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     | ResponsiveValue<ThemeValue<string, any>>;
 };
 
-export type IntrnisicColorShorthandAttributes = {
+export type IntrinsicColorShorthandAttributes = {
   [key in keyof ColorProps]?:
     | Pick<ColorProps, key>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,6 +21,6 @@ export type IntrinsicStylesAttributes = {
     | ResponsiveValue<ThemeValue<string, any>>;
 };
 
-export type IntrinsicTachyonsAttributes = IntrnisicSpaceShorthandAttributes &
+export type IntrinsicTachyonsAttributes = IntrinsicSpaceShorthandAttributes &
   IntrinsicStylesAttributes &
-  IntrnisicColorShorthandAttributes;
+  IntrinsicColorShorthandAttributes;
