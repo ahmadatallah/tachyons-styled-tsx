@@ -1,4 +1,4 @@
-# Tachyons React App in TypeScript
+# Tachyons React App in TypeScript [WIP]
 
 This project is based on [tachyons-styled-react](https://github.com/tachyons-css/tachyons-styled-react), but written with types in mind. It uses types from emotion and styled-system to get Tachyons into your create-react-app typescript template.
 
