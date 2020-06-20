@@ -91,8 +91,8 @@ import Var from "../elements/Var";
 function Home() {
   return (
     <div>
-      <header px={4} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
-        <div maxWidth="6rem">
+      <header px={[2, 3, 4]} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
+        <div maxWidth="6rem" mr={2}>
           <a display="block" href="/">
             <Logo color="rgba(0,0,0,.7)" />
           </a>
@@ -116,6 +116,7 @@ function Home() {
           GitHub
         </a>
       </header>
+
       <main>
         <Section mx="auto" maxWidth="128rem">
           <Header py={6} px={[4, 5]} color="white" bg="purple">

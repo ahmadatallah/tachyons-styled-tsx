@@ -10,8 +10,8 @@ import { cardExample } from "constants/index";
 function Home() {
   return (
     <div>
-      <header px={4} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
-        <div maxWidth="6rem">
+      <header px={[2, 3, 4]} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
+        <div maxWidth="6rem" mr={2}>
           <a display="block" href="/">
             <Logo color="rgba(0,0,0,.7)" />
           </a>
@@ -22,7 +22,7 @@ function Home() {
         <a fontSize={0} mr={3} fontWeight={700} color="black" href="/styles" title="Styles">
           Styles
         </a>
-        <a fontSize={0} mr={3} fontWeight={700} color="black" href="/jsx-playground" title="jsx-playground">
+        <a fontSize={0} mr={3} fontWeight={700} color="black" href="/jsx-playground" title="Playground">
           Playground
         </a>
         <a
@@ -35,8 +35,9 @@ function Home() {
           GitHub
         </a>
       </header>
+
       <main>
-        <Container pt={[5, 6]} pb={[5, 6, 7]} px={4}>
+        <Container pt={[3, 4]} pb={[5, 6, 7]} px={4}>
           <article>
             <h3>Card</h3>
             <LiveProvider theme={themeSyntax} scope={{ Card, jsx }} code={cardExample}>

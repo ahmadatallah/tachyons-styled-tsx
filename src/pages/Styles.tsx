@@ -13,8 +13,8 @@ const space = [...theme.space];
 function Styles() {
   return (
     <div>
-      <header px={4} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
-        <div maxWidth="6rem">
+      <header px={[2, 3, 4]} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
+        <div maxWidth="6rem" mr={2}>
           <a display="block" href="/">
             <Logo color="rgba(0,0,0,.7)" />
           </a>
@@ -38,6 +38,7 @@ function Styles() {
           GitHub
         </a>
       </header>
+
       <Container>
         <section p={4}>
           <h2>Typefaces</h2>

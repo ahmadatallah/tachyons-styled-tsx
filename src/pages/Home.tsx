@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import jsx from "jsx";
 import React from "react";
-import theme from "../theme";
+import theme from "theme";
 
 import Logo from "components/Logo";
 import Container from "components/Container";
@@ -9,8 +9,8 @@ import Container from "components/Container";
 function Home() {
   return (
     <div>
-      <header px={4} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
-        <div maxWidth="6rem">
+      <header px={[2, 3, 4]} py={2} borderBottom="1px solid" borderColor="black-20" display="flex" alignItems="center">
+        <div maxWidth="6rem" mr={2}>
           <a display="block" href="/">
             <Logo color="rgba(0,0,0,.7)" />
           </a>
@@ -35,7 +35,7 @@ function Home() {
         </a>
       </header>
       <main>
-        <Container innerWidth="70%" pt={[4, 5]} pb={[5, 6, 7]} px={4}>
+        <Container pt={[4, 5]} pb={[5, 6, 7]} px={4}>
           <h2 fontSize={[3, 6, 7]} mb={4} mt={0}>
             Build, design, and style UI at the speed of light with types in mind
           </h2>
