@@ -5,18 +5,22 @@ import theme from "./theme";
 
 // import pages here
 
-import Components from "./pages/Components";
-
-import Div from "./elements/Div";
+import Components from "pages/Components";
+import Home from "pages/Home";
+import JSXPlayground from "pages/JSXPlayground";
+import Styles from "pages/Styles";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Div>
+      <div>
         <Router>
-          <Route exact path="/" component={Components} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/components" component={Components} />
+          <Route exact path="/jsx-playground" component={JSXPlayground} />
+          <Route exact path="/styles" component={Styles} />
         </Router>
-      </Div>
+      </div>
     </ThemeProvider>
   );
 }

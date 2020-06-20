@@ -1,4 +1,4 @@
-import TachyonsTheme, { tachyonsColors } from "tachyons-theme";
+import TachyonsTheme, { colors, typefaces } from "tachyons-theme";
 
 const theme: TachyonsTheme = {
   breakpoints: ["30em", "60em"],
@@ -27,7 +27,8 @@ const theme: TachyonsTheme = {
       textTransform: "capitalize",
     },
   },
-  colors: tachyonsColors,
+  colors,
+  typefaces,
 };
 
 export default theme;

@@ -1,12 +1,11 @@
 /** @jsx jsx */
-import { jsx } from "jsx";
+import jsx from "jsx";
 import React from "react";
-import themeSyntax from "../theme-syntax";
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import theme from "../theme";
+
 import Logo from "components/Logo";
 import Container from "components/Container";
-import Card from "components/Card";
-import { cardExample } from "constants/index";
+
 function Home() {
   return (
     <div>
@@ -22,7 +21,7 @@ function Home() {
         <a fontSize={0} mr={3} fontWeight={700} color="black" href="/styles" title="Styles">
           Styles
         </a>
-        <a fontSize={0} mr={3} fontWeight={700} color="black" href="/jsx-playground" title="jsx-playground">
+        <a fontSize={0} mr={3} fontWeight={700} color="black" href="/jsx-playground" title="Playground">
           Playground
         </a>
         <a
@@ -36,18 +35,47 @@ function Home() {
         </a>
       </header>
       <main>
-        <Container pt={[5, 6]} pb={[5, 6, 7]} px={4}>
-          <article>
-            <h3>Card</h3>
-            <LiveProvider theme={themeSyntax} scope={{ Card, jsx }} code={cardExample}>
-              <LiveEditor />
-              <LiveError />
-              <div mt={3}>
-                <LivePreview />
-              </div>
-            </LiveProvider>
-            <pre></pre>
-          </article>
+        <Container innerWidth="70%" pt={[4, 5]} pb={[5, 6, 7]} px={4}>
+          <h2 fontSize={[3, 6, 7]} mb={4} mt={0}>
+            Build, design, and style UI at the speed of light with types in mind
+          </h2>
+          <h3 fontSize={[1, 2, 3]} lineHeight={1.25} textStyle="caps" color="black-80" mb={5}>
+            <span display={["block", "inline"]}>Tachyons + </span>
+            <span display={["block", "inline"]}>Styled-system + </span>
+            <span display={["block", "inline"]}>Emotion + </span>
+            <span display={["block", "inline"]}>Create React App +</span>
+            <span display={["block", "inline"]}>TypeScript</span>
+          </h3>
+          <div flex="1 1 auto">
+            <a
+              href="/styles"
+              title="Styles and documentation"
+              bg="dark-blue"
+              color="white"
+              borderRadius={2}
+              py={3}
+              px={4}
+              m={[1, 2, 3]}
+              fontSize={[1]}
+              fontWeight={700}
+            >
+              Styles &amp; Documentation
+            </a>
+            <a
+              href="/jsx-playground"
+              title="Typed JSX based semantic markup"
+              bg="dark-blue"
+              color="white"
+              borderRadius={2}
+              py={3}
+              px={4}
+              m={[1, 2, 3]}
+              fontSize={[1]}
+              fontWeight={700}
+            >
+              Typed JSX Based Semantic Markup
+            </a>
+          </div>
         </Container>
       </main>
       <footer borderTop="1px solid" borderColor="black-20" px={4} py={4} display="flex">

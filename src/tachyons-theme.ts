@@ -1,6 +1,6 @@
 import { Theme } from "styled-system";
 
-export const tachyonsColors = {
+export const colors = {
   "dark-red": "#e7040f",
   red: "#ff4136",
   "light-red": "#ff725c",
@@ -63,10 +63,20 @@ export const tachyonsColors = {
   "white-0125": "rgba(255,255,255,.0125)",
 };
 
-type TachyonsColor = keyof typeof tachyonsColors;
+export const typefaces = {
+  serif: "athelas, georgia, times, serif",
+  sansSerif:
+    'system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
+  mono: "Consolas, monaco, monospace",
+};
 
+type Color = keyof typeof colors;
+type TypeFace = keyof typeof typefaces;
 export default interface TachyonsTheme extends Theme {
   colors: {
-    [color: string]: TachyonsColor | string;
+    [color: string]: Color | string;
+  };
+  typefaces: {
+    [typeface: string]: TypeFace | string;
   };
 }
